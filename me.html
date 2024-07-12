@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel Brown - Computer Engineer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="me.css">
+    <script src="form.js"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md py-4 fixed w-full z-10">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-800">My Portfolio</a>
+            <div>
+                <a href="#about" class="text-gray-700 mx-4 hover:text-gray-900">About</a>
+                <a href="#portfolio" class="text-gray-700 mx-4 hover:text-gray-900">Portfolio</a>
+                <a href="#services" class="text-gray-700 mx-4 hover:text-gray-900">Services</a>
+                <a href="#testimonials" class="text-gray-700 mx-4 hover:text-gray-900">Testimonials</a>
+                <!-- <a href="#blog" class="text-gray-700 mx-4 hover:text-gray-900">Blog</a> -->
+                <a href="#contact" class="text-gray-700 mx-4 hover:text-gray-900">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center h-screen" style="background-image: url('images/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg');">
+        <div class="container mx-auto h-full flex justify-center items-center text-center text-white">
+            <div class="fade-in">
+                <h1 class="text-5xl font-bold">Hello, I'm Emmanuel Brown</h1>
+                <p class="text-2xl mt-4">A Computer Engineer specializing in Software Development</p>
+                <br>
+                <a href="#portfolio" class="mt-8 px-8 py-3 bg-blue-600 rounded-full text-white hover:bg-blue-700">View My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 bg-gray-100">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2">
+                <img src="images/IMG_2318 EMMANUEL.JPG" alt="Profile Picture" class="rounded-full w-3/4 mx-auto md:mx-0">
+            </div>
+            <div class="md:w-1/2 mt-8 md:mt-0 md:pl-12">
+                <h2 class="text-4xl font-bold">About Me</h2>
+                <p class="mt-4 text-gray-700">A final-year Computer Engineering student at Kwame Nkrumah University of Science and Technology, pursuing a BSc in Computer Engineering. My expertise spans web development and machine learning, with hands-on experience in HTML, CSS (Tailwind, Bootstrap), Git, GitHub, JavaScript, Python, React, PostgreSQL, and FastAPI. Additionally, I have completed certifications in AWS Academy Cloud Foundations, Cloud Security Foundations, and Cisco Networking Technician, and I have foundational knowledge in machine learning and AI solutions. I have gained practical experience as a Student Intern at Calbank Plc, providing IT support, and at AkooAudio Books Company, where I further honed my technical skills. My passion for technology drives my commitment to continuous learning and innovation. I am eager to embrace new challenges and contribute to advancements in this ever-evolving field.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold">My Work</h2>
+            <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="bg-gray-200 p-6 rounded-lg shadow-md transform transition duration-500 hover:scale-105">
+                    <img src="images/Screenshot 2024-07-01 025546.png" alt="Project 1" class="rounded-lg">
+                    <h3 class="mt-4 text-xl font-semibold">Pharmacy Backend (Python, FastAPI)</h3>
+                    <p class="mt-2 text-gray-700">Developed backend services for CRUD operations and authentication using FastApi (A python framework), PostgreSQL.</p>
+                </div>
+                <div class="bg-gray-200 p-6 rounded-lg shadow-md transform transition duration-500 hover:scale-105">
+                    <img src="images/Screenshot 2024-07-01 030116.png" alt="Project 2" class="rounded-lg">
+                    <h3 class="mt-4 text-xl font-semibold">E-commerce Web App (React, HTML, CSS)</h3>
+                    <p class="mt-2 text-gray-700">Built responsive front-end pages with React.js and CSS frameworks.</p>
+                </div>
+                <div class="bg-gray-200 p-6 rounded-lg shadow-md transform transition duration-500 hover:scale-105">
+                    <img src="images/Screenshot 2024-07-01 025731.png" alt="Project 3" class="rounded-lg">
+                    <h3 class="mt-4 text-xl font-semibold">Agro Produce E-commerce Backend</h3>
+                    <p class="mt-2 text-gray-700">Created backend APIs for managing products, orders, and user data (Python, FastAPI).</p>
+                </div>
+                <div class="bg-gray-200 p-6 rounded-lg shadow-md transform transition duration-500 hover:scale-105">
+                    <img src="images/Screenshot 2024-07-01 030829.png" alt="Project 4" class="rounded-lg">
+                    <h3 class="mt-4 text-xl font-semibold">Machine Learning Projects</h3>
+                    <p class="mt-2 text-gray-700">Fraud Detection: Participated in Zindi challenges for detecting fraud in utility consumption using Python and Google Colab.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold">Services</h2>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md transform transition duration-500 hover:scale-105">
+                    <i class="fas fa-code text-4xl text-blue-600"></i>
+                    <h3 class="mt-4 text-xl font-semibold">Web Development</h3>
+                    <p class="mt-2 text-gray-700">Building responsive and functional websites using the latest technologies.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md transform transition duration-500 hover:scale-105">
+                    <i class="fas fa-mobile-alt text-4xl text-blue-600"></i>
+                    <h3 class="mt-4 text-xl font-semibold">Machine Learning Solutions</h3>
+                    <p class="mt-2 text-gray-700">Developing predictive models and data analysis tools for various applications.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md transform transition duration-500 hover:scale-105">
+                    <i class="fas fa-cloud text-4xl text-blue-600"></i>
+                    <h3 class="mt-4 text-xl font-semibold">Cloud Solutions</h3>
+                    <p class="mt-2 text-gray-700">Designing and implementing scalable cloud solutions to enhance business operations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards and Recognitions Section -->
+    <section id="awards" class="py-20 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold">Awards and Recognitions</h2>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md transform transition duration-500 hover:scale-105">
+                    <h3 class="mt-4 text-xl font-semibold">Overall Best Student (Junior High School)</h3>
+                    <p class="mt-2 text-gray-700">Recognized for exceptional academic performance across all subjects.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md transform transition duration-500 hover:scale-105">
+                    <h3 class="mt-4 text-xl font-semibold">Best in Mathematics</h3>
+                    <p class="mt-2 text-gray-700">Excelled in mathematics with top marks and strong problem-solving skills.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md transform transition duration-500 hover:scale-105">
+                    <h3 class="mt-4 text-xl font-semibold">Best in Integrated Science</h3>
+                    <p class="mt-2 text-gray-700">Outstanding knowledge and application of scientific principles.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md transform transition duration-500 hover:scale-105">
+                    <h3 class="mt-4 text-xl font-semibold">Best in Religious and Moral Education</h3>
+                    <p class="mt-2 text-gray-700">Exemplary understanding of religious teachings and moral values.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md transform transition duration-500 hover:scale-105">
+                    <h3 class="mt-4 text-xl font-semibold">Best in Information and Communications Technology</h3>
+                    <p class="mt-2 text-gray-700">Demonstrated superior ICT skills and technological proficiency.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md transform transition duration-500 hover:scale-105">
+                    <h3 class="mt-4 text-xl font-semibold">Best in Ghanaian Language</h3>
+                    <p class="mt-2 text-gray-700">Achieved exceptional proficiency in the Ghanaian language.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md transform transition duration-500 hover:scale-105">
+                    <h3 class="mt-4 text-xl font-semibold">Most Disciplined Student</h3>
+                    <p class="mt-2 text-gray-700">Consistently displayed exemplary behavior and self-discipline.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-20 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold">Certifications</h2>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md transform transition duration-500 hover:scale-105">
+                    <h3 class="mt-4 text-xl font-semibold">AWS Academy Cloud Security Foundations</h3>
+                    <p class="mt-2 text-gray-700">Gained knowledge on securing cloud environments using AWS best practices.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md transform transition duration-500 hover:scale-105">
+                    <h3 class="mt-4 text-xl font-semibold">AWS Academy Introduction to Cloud Semester 1</h3>
+                    <p class="mt-2 text-gray-700">Learned foundational concepts of cloud computing and AWS services.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md transform transition duration-500 hover:scale-105">
+                    <h3 class="mt-4 text-xl font-semibold">AWS Academy Introduction to Cloud Semester 2</h3>
+                    <p class="mt-2 text-gray-700">Expanded understanding of AWS architecture and cloud service management.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md transform transition duration-500 hover:scale-105">
+                    <h3 class="mt-4 text-xl font-semibold">Cisco Certified Entry Networking Technician (CCENT)</h3>
+                    <p class="mt-2 text-gray-700">Certified with essential networking skills and knowledge of Cisco technologies.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md transform transition duration-500 hover:scale-105">
+                    <h3 class="mt-4 text-xl font-semibold">AWS Academy Cloud Foundations</h3>
+                    <p class="mt-2 text-gray-700">Mastered core AWS services and cloud infrastructure basics.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md transform transition duration-500 hover:scale-105">
+                    <h3 class="mt-4 text-xl font-semibold">Kibo School Web Foundations</h3>
+                    <p class="mt-2 text-gray-700">Acquired fundamental skills in web development and design principles.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md transform transition duration-500 hover:scale-105">
+                    <h3 class="mt-4 text-xl font-semibold">PartnerAfrika-Projekt KNUST Summer Internship Program</h3>
+                    <p class="mt-2 text-gray-700">Completed a practical internship program with hands-on experience in a professional setting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Downloadable Content Section -->
+    <section id="downloads" class="py-20 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold">Downloadable Content</h2>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md transform transition duration-500 hover:scale-105">
+                    <i class="fas fa-file-pdf text-4xl text-blue-600"></i>
+                    <h3 class="mt-4 text-xl font-semibold">Resume</h3>
+                    <p class="mt-2 text-gray-700">Download my resume in PDF format.</p>
+                    <a href="sampleresume.pdf" class="mt-4 inline-block bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700">Download</a>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md transform transition duration-500 hover:scale-105">
+                    <i class="fas fa-file-alt text-4xl text-blue-600"></i>
+                    <h3 class="mt-4 text-xl font-semibold">Portfolio PDF</h3>
+                    <p class="mt-2 text-gray-700">Download my portfolio in PDF format.</p>
+                    <a href="Emmanuel Brown - Computer Engineer.pdf" class="mt-4 inline-block bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700">Download</a>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md transform transition duration-500 hover:scale-105">
+                    <i class="fas fa-file-download text-4xl text-blue-600"></i>
+                    <h3 class="mt-4 text-xl font-semibold">Brochure</h3>
+                    <p class="mt-2 text-gray-700">Download a detailed brochure of my services.</p>
+                    <a href="brochure.pdf" class="mt-4 inline-block bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700">Download</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-20 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold">Events</h2>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md transform transition duration-500 hover:scale-105">
+                    <h3 class="mt-4 text-xl font-semibold">Event 1</h3>
+                    <p class="mt-2 text-gray-700">Description of the event.</p>
+                    <p class="mt-2 text-gray-700">Date: 01/01/2024</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md transform transition duration-500 hover:scale-105">
+                    <h3 class="mt-4 text-xl font-semibold">Event 2</h3>
+                    <p class="mt-2 text-gray-700">Description of the event.</p>
+                    <p class="mt-2 text-gray-700">Date: 02/01/2024</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md transform transition duration-500 hover:scale-105">
+                    <h3 class="mt-4 text-xl font-semibold">Event 3</h3>
+                    <p class="mt-2 text-gray-700">Description of the event.</p>
+                    <p class="mt-2 text-gray-700">Date: 03/01/2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold">Testimonials</h2>
+            <div class="mt-12 relative">
+                <div class="carousel flex overflow-x-hidden snap-x snap-mandatory scroll-smooth">
+                    <div class="carousel-item snap-center w-full flex-shrink-0">
+                        <div class="bg-gray-100 p-8 rounded-lg shadow-lg">
+                            <p class="text-lg text-gray-700">"Emmanuel proved to be a very reliable intern. His initiative to learn about our
+                                audiobook platform technology and business processes was commendable. He was a quick learner
+                                and was able to jump in very quickly. He showed a lot of initiative in wanting to learn and
+                                completed all of the tasks we gave him in a timely manner."</p>
+                            <p class="mt-4 font-semibold">Ama G.Dadson(Akoobooks Audio CEO)</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item snap-center w-full flex-shrink-0">
+                        <div class="bg-gray-100 p-8 rounded-lg shadow-lg">
+                            <p class="text-lg text-gray-700">"Working with Emmanuel was a pleasure. His expertise and dedication are truly commendable."</p>
+                            <p class="mt-4 font-semibold">- Client 2</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item snap-center w-full flex-shrink-0">
+                        <div class="bg-gray-100 p-8 rounded-lg shadow-lg">
+                            <p class="text-lg text-gray-700">"Emmanuel's skills and professionalism made our project a success. We couldn't be happier with the results."</p>
+                            <p class="mt-4 font-semibold">- Client 3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section
+    <section id="blog" class="py-20 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold">Blog</h2>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md transform transition duration-500 hover:scale-105">
+                    <img src="https://via.placeholder.com/400x300" alt="Blog Post 1" class="rounded-lg">
+                    <h3 class="mt-4 text-xl font-semibold">Blog Post 1</h3>
+                    <p class="mt-2 text-gray-700">A brief introduction to the content of Blog Post 1.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md transform transition duration-500 hover:scale-105">
+                    <img src="https://via.placeholder.com/400x300" alt="Blog Post 2" class="rounded-lg">
+                    <h3 class="mt-4 text-xl font-semibold">Blog Post 2</h3>
+                    <p class="mt-2 text-gray-700">A brief introduction to the content of Blog Post 2.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md transform transition duration-500 hover:scale-105">
+                    <img src="https://via.placeholder.com/400x300" alt="Blog Post 3" class="rounded-lg">
+                    <h3 class="mt-4 text-xl font-semibold">Blog Post 3</h3>
+                    <p class="mt-2 text-gray-700">A brief introduction to the content of Blog Post 3.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold">Contact Me</h2>
+            <p class="mt-4 text-gray-700">Feel free to get in touch with me using the form below.</p>
+            <form action="contactForm" method="post" class="mt-8 max-w-lg mx-auto">
+                <div class="flex flex-col mb-4">
+                    <label for="name" class="mb-2 text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" class="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                </div>
+                <div class="flex flex-col mb-4">
+                    <label for="email" class="mb-2 text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" class="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                </div>
+                <div class="flex flex-col mb-4">
+                    <label for="message" class="mb-2 text-gray-700">Message</label>
+                    <textarea id="message" name="message" rows="4" class="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+                </div>
+                <button type="submit" class="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Emmanuel Brown. All rights reserved.</p>
+            <div class="mt-4">
+                <a href="https://twitter.com/" class="mx-2 text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/eabrown01/" class="mx-2 text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Eabrown100" class="mx-2 text-gray-400 hover:text-white"><i class="fab fa-github"></i></a>
+                <a href="https://www.facebook.com/" class="mx-2 text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
